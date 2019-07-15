@@ -1,0 +1,15 @@
+node.name: kare-1
+cluster.initial_master_nodes: ["kare-1"]
+xpack.ml.enabled: false
+network.host: 0.0.0.0
+http.port: 9201
+#memory
+#bootstrap.memory_lock: false
+bootstrap.system_call_filter: false
+
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+
+#集群
+cluster.name: kare
+node.master: true

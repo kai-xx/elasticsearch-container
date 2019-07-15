@@ -1,0 +1,17 @@
+node.name: kare-2
+xpack.ml.enabled: false
+network.host: 0.0.0.0
+http.port: 9202
+#memory
+#bootstrap.memory_lock: false
+bootstrap.system_call_filter: false
+
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+
+#集群
+cluster.name: kare
+node.master: false
+
+#自动发现
+discovery.zen.ping.unicast.hosts: ['192.167.0.101']
