@@ -1,17 +1,17 @@
 # elasticsearch-container
 
-##docker镜像地址
-####elasticsearch
+## docker镜像地址
+#### elasticsearch
 ```
 docker.elastic.co/elasticsearch/elasticsearch:7.1.1@sha256:1084c64eed7d9318d028361c9aee398afdeb70d1816ce81d590b9450ec542c08
 ```
-####elasticsearch-head
+#### elasticsearch-head
 ```
 tobias74/elasticsearch-head:6
 ```
 ##### 注：如果镜像不是最新，请自行去hub.docker.com中查找
 
-####目录结构
+#### 目录结构
 ```
 ├── docker-compose.yml
 ├── es1
@@ -25,7 +25,7 @@ tobias74/elasticsearch-head:6
     └── _site
         └── app.js
 ```
-####docker-compose.yml 配置
+#### docker-compose.yml 配置
 ```dockerfile
 version: '3'
 services:
@@ -140,8 +140,8 @@ node.master: false
 #自动发现
 discovery.zen.ping.unicast.hosts: ['192.167.0.101']
 ```
-####elasticsearch-head中两个文件配置：
-######Gruntfile.js
+#### elasticsearch-head中两个文件配置：
+###### Gruntfile.js
 ```
 connect: {
       server: {
@@ -154,7 +154,7 @@ connect: {
       }
 }
 ```
-######_site/app.js
+###### _site/app.js
 ```
 #ip:端口号  根据自己实际情况填写
 this.base_uri = this.config.base_uri || this.prefs.get("app-base_uri") || "http://39.96.77.174:9201";
